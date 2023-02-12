@@ -1,9 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 .profile-img {
   max-width: 80%;
   max-height: 100%;
 }
 
-.sidebar {
-  width: 25%;
-  height: 100%;
+@layer components {
+  .main {
+    @apply sm:ml-64
+  }
+  
+  .text-heading-primary {
+    @apply mb-4 text-3xl font-extrabold text-gray-900 dark:text-white md:text-5xl lg:text-6xl
+  }
 }

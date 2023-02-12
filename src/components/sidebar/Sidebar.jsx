@@ -5,7 +5,7 @@ function Sidebar() {
     {
       id: 1,
       title: 'Home',
-      link: 'home',
+      link: '/',
       img: 'vite.svg',
     },
     {
@@ -40,11 +40,11 @@ function Sidebar() {
         data-drawer-toggle='logo-sidebar'
         aria-controls='logo-sidebar'
         type='button'
-        className='inline-flex items-center p-2 mt-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600'
+        className='mt-2 ml-3 inline-flex items-center rounded-lg p-2 text-sm text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600 md:hidden'
       >
         <span className='sr-only'>Open sidebar</span>
         <svg
-          className='w-6 h-6'
+          className='h-6 w-6'
           aria-hidden='true'
           fill='currentColor'
           viewBox='0 0 20 20'
@@ -60,13 +60,13 @@ function Sidebar() {
 
       <aside
         id='logo-sidebar'
-        className='fixed top-0 left-0 z-40 w-64 h-screen transition-transform -translate-x-full sm:translate-x-0'
+        className='fixed top-0 left-0 z-40 h-screen w-64 -translate-x-full transition-transform sm:translate-x-0'
         aria-label='Sidebar'
       >
-        <div className='h-full px-3 py-4 overflow-y-auto bg-gray-300 dark:bg-gray-800'>
+        <div className='h-full overflow-y-auto bg-gray-300 px-3 py-4 dark:bg-gray-800'>
           <a href='/' className='flex-col'>
             <img src='profile.png' className='w-full' alt='profile' />
-            <div className='text-center text-3xl font-semibold mb-5 whitespace-nowrap bg-blue-400'>
+            <div className='mb-5 whitespace-nowrap bg-blue-400 text-center text-3xl font-semibold'>
               Rikie Patrick
             </div>
           </a>

@@ -25,6 +25,7 @@
     "react/jsx-no-undef": 0,
     "no-console": "off",
     "no-underscore-dangle": 0,
-    "jsx-quotes": ["error", "prefer-single"]
+    "jsx-quotes": ["error", "prefer-single"],
+    "react/prop-types": "off"
   }
 }
