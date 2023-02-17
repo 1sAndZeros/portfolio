@@ -4,7 +4,7 @@ function AboutMe() {
       <div className='rounded-lg border-2 border-gray-200 p-4 dark:border-gray-700'>
         <div className='mb-4 flex grid-cols-3 gap-4 border-4'>
           <div className='flex h-24 items-center justify-start rounded bg-gray-500 dark:bg-gray-800'>
-            <h1 className='p-4 text-4xl text-white dark:text-gray-500'>
+            <h1 className='text-white p-4 text-4xl dark:text-gray-500'>
               About Me
             </h1>
           </div>

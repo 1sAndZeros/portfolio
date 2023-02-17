@@ -1,38 +1,8 @@
 import SidebarItem from './SidebarItem';
+import pages from './pages';
+import './sidebar.css';
 
 function Sidebar() {
-  const items = [
-    {
-      id: 1,
-      title: 'Home',
-      link: '/',
-      img: 'vite.svg',
-    },
-    {
-      id: 2,
-      title: 'About Me',
-      link: 'about',
-      img: 'vite.svg',
-    },
-    {
-      id: 3,
-      title: 'Resume',
-      link: 'resume',
-      img: 'vite.svg',
-    },
-    {
-      id: 4,
-      title: 'Projects',
-      link: 'projects',
-      img: 'vite.svg',
-    },
-    {
-      id: 5,
-      title: 'Contact Me',
-      link: 'contact',
-      img: 'vite.svg',
-    },
-  ];
   return (
     <div>
       <button
@@ -63,7 +33,7 @@ function Sidebar() {
         className='fixed top-0 left-0 z-40 h-screen w-64 -translate-x-full transition-transform sm:translate-x-0'
         aria-label='Sidebar'
       >
-        <div className='h-full overflow-y-auto bg-gray-300 px-3 py-4 dark:bg-gray-800'>
+        <div className='h-full overflow-y-auto px-3 py-4'>
           <a href='/' className='flex-col'>
             <img src='profile.png' className='w-full' alt='profile' />
             <div className='mb-5 whitespace-nowrap bg-blue-400 text-center text-3xl font-semibold'>
@@ -71,13 +41,13 @@ function Sidebar() {
             </div>
           </a>
           <ul className='space-y-2'>
-            {items.map((item) => {
+            {pages.map((page) => {
               return (
                 <SidebarItem
-                  key={item.id}
-                  title={item.title}
-                  link={item.link}
-                  img={item.img}
+                  key={page.id}
+                  title={page.title}
+                  link={page.link}
+                  img={page.img}
                 />
               );
             })}

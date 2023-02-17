@@ -5,9 +5,9 @@ function SidebarItem({ title, link, img }) {
     <li>
       <Link
         to={link}
-        className='flex items-center rounded-lg p-2 text-base font-normal text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700'
+        className='text-white flex items-center rounded-lg p-2 text-base font-normal hover:bg-gray-100 dark:hover:bg-gray-700'
       >
-        <img src={img} alt='icon' />
+        <img src={img} alt='icon' className='sidebar-icon' />
         <span className='ml-3'>{title}</span>
       </Link>
     </li>
