@@ -8,9 +8,6 @@
 }
 
 @layer components {
-  .text-heading-primary {
-    @apply mb-4 text-3xl font-extrabold md:text-5xl lg:text-6xl
-  }
   .main {
     @apply sm:ml-64
   }

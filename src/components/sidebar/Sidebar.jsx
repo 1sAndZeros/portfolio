@@ -29,18 +29,18 @@ function Sidebar() {
       </button>
 
       <aside
-        id='logo-sidebar'
-        className='fixed top-0 left-0 z-40 h-screen w-64 -translate-x-full transition-transform sm:translate-x-0'
+        id='sidebar'
+        className='-translate-x-full transition-transform sm:translate-x-0'
         aria-label='Sidebar'
       >
-        <div className='h-full overflow-y-auto px-3 py-4'>
+        <div className='h-full overflow-y-auto py-4'>
           <a href='/' className='flex-col'>
-            <img src='profile.png' className='w-full' alt='profile' />
-            <div className='mb-5 whitespace-nowrap bg-blue-400 text-center text-3xl font-semibold'>
-              Rikie Patrick
+            <img src='profile.png' className='relative w-full' alt='profile' />
+            <div className='name-block'>
+              <h2>RIKIE PATRICK</h2>
             </div>
           </a>
-          <ul className='space-y-2'>
+          <ul className='mt-5 space-y-2'>
             {pages.map((page) => {
               return (
                 <SidebarItem
