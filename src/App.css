@@ -2,14 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-.profile-img {
-  max-width: 80%;
-  max-height: 100%;
-}
-
-@layer components {
-  .main {
-    @apply sm:ml-64
+@media (min-width: 480px) {
+  main {
+    margin-left: 14rem;
   }
-  
 }
