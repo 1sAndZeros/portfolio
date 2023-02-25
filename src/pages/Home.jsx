@@ -1,13 +1,51 @@
-import { useEffect } from 'react';
+import { useEffect, useRef } from 'react';
 import bgVideo from '../assets/bg-video-earth.mp4';
 import mountainImg from '../assets/mountain-img.jpg';
-import wordflick from '../animatedtext';
-
-// TODO: Fix bug when text animation is rerendered
+import '../css/home.css';
 
 function Home() {
+  const animationRef = useRef();
+
   useEffect(() => {
-    wordflick();
+    const words = ['Web Developer', 'Software Engineer', 'UI / UX Designer'];
+    const len = words.length;
+    const skipDelay = 15;
+    const speed = 100;
+    let part;
+    let i = 0;
+    let offset = 0;
+    let forwards = true;
+    let skipCount = 0;
+    const wordAnimation = setInterval(() => {
+      if (forwards) {
+        if (offset >= words[i].length) {
+          skipCount += 1;
+          if (skipCount === skipDelay) {
+            forwards = false;
+            skipCount = 0;
+          }
+        }
+      } else if (offset === 0) {
+        forwards = true;
+        i += 1;
+        offset = 0;
+        if (i >= len) {
+          i = 0;
+        }
+      }
+      part = words[i].substr(0, offset);
+      if (skipCount === 0) {
+        if (forwards) {
+          offset += 1;
+        } else {
+          offset -= 1;
+        }
+      }
+      animationRef.current.innerHTML = part;
+    }, speed);
+    return () => {
+      clearInterval(wordAnimation);
+    };
   }, []);
   return (
     <main className='main'>
@@ -25,9 +63,7 @@ function Home() {
 
             <h2 className='headline'>
               <span>I am a </span>
-              <div className='word' />
-              {/* <div className='text2'>Designer</div> */}
-              {/* <div className='text3'>Engineer</div> */}
+              <div ref={animationRef} className='word' />
             </h2>
           </div>
         </div>

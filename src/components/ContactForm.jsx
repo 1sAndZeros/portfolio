@@ -1,5 +1,4 @@
-import React from 'react';
-import './contact.css';
+import '../css/contact.css';
 
 function ContactForm() {
   // TODO: Add click handler for submit button to send message
@@ -25,7 +24,7 @@ function ContactForm() {
               type='email'
               id='email'
               className='form-input'
-              placeholder='johnsmiith@example.com'
+              placeholder='johnsmith@example.com'
               required
             />
           </label>

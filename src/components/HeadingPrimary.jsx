@@ -1,4 +1,4 @@
-import React from 'react';
+import '../css/headings.css';
 
 function HeadingPrimary({ text, icon }) {
   return (

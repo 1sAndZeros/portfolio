@@ -1,8 +1,8 @@
-import user from '../../assets/user.svg';
-import mail from '../../assets/mail.svg';
-import doc from '../../assets/doc.svg';
-import home from '../../assets/home.svg';
-import projects from '../../assets/projects.svg';
+import user from '../assets/svg-icons/user.svg';
+import mail from '../assets/svg-icons/mail.svg';
+import doc from '../assets/svg-icons/doc.svg';
+import home from '../assets/svg-icons/home.svg';
+import projects from '../assets/svg-icons/projects.svg';
 
 const pages = [
   {

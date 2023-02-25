@@ -1,0 +1,34 @@
+  label {
+    @apply mb-2 block text-xl font-medium text-gray-900 !important;
+  }
+
+  .form-container {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1rem;
+  }
+
+    .form-input {
+      margin-top: 0.5rem;
+      display: block;
+      width: 100%;
+      border-radius: 0.125rem;
+      padding: 0.625rem;
+      font-size: 0.875rem;
+      line-height: 1.25rem;
+      background-color: transparent;
+    }
+  
+    .form-input::placeholder {
+      color: var(--color-neutral)
+    }
+  
+    .form-input:focus {
+      border-color: var(--color-primary);
+    }
+
+  .contact-icon {
+    font-size: 3rem;
+    color: var(--color-primary);
+  }

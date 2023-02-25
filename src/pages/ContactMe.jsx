@@ -1,9 +1,9 @@
-import ContactForm from '../components/contact/ContactForm';
-import '../components/contact/contact.css';
+import ContactForm from '../components/ContactForm';
+import '../css/contact.css';
 import HeadingPrimary from '../components/HeadingPrimary';
-import mailIcon from '../assets/mail.svg';
+import mailIcon from '../assets/svg-icons/mail.svg';
 import Subheading from '../components/Subheading';
-import ContactIcon from '../components/contact/ContactIcon';
+import ContactIcon from '../components/ContactIcon';
 
 function ContactMe() {
   return (

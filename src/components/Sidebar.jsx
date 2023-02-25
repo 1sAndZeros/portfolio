@@ -1,6 +1,6 @@
 import SidebarItem from './SidebarItem';
-import pages from './pages';
-import './sidebar.css';
+import pages from '../data/pages';
+import '../css/sidebar.css';
 
 function Sidebar() {
   return (

@@ -1,4 +1,4 @@
-import React from 'react';
+import '../css/headings.css';
 
 function Subheading({ text }) {
   return (

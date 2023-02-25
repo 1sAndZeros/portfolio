@@ -1,5 +1,4 @@
-import React from 'react';
-import './contact.css';
+import '../css/contact.css';
 
 function ContactIcon({ icon, tag, href }) {
   return (
