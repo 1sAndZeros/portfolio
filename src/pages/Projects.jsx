@@ -7,7 +7,7 @@ import '../css/projects.css';
 
 function Projects() {
   return (
-    <main className='main'>
+    <main id='projects' className='main'>
       <HeadingPrimary text='Projects' icon={projectsIcon} />
       <Subheading text='Check it out!' />
       <div className='projects-container'>

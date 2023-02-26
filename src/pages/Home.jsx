@@ -48,26 +48,23 @@ function Home() {
     };
   }, []);
   return (
-    <main className='main'>
-      <section id='home'>
-        <div id='video-container'>
-          <video autoPlay loop muted id='bg-video' poster={mountainImg}>
-            {/* Video by Ingrid North: */}
-            {/* https://www.pexels.com/video/the-sun-illuminating-earth-s-surface-1851190/{' '} */}
-            <source src={bgVideo} type='video/mp4' />
-          </video>
-          <div className='banner'>
-            <h1 className='home-title'>
-              Rikie <span>Patrick</span>
-            </h1>
-
-            <h2 className='headline'>
-              <span>I am a </span>
-              <div ref={animationRef} className='word' />
-            </h2>
-          </div>
+    <main id='home' className='main'>
+      <div id='video-container'>
+        <video autoPlay loop muted id='bg-video' poster={mountainImg}>
+          {/* Video by Ingrid North: */}
+          {/* https://www.pexels.com/video/the-sun-illuminating-earth-s-surface-1851190/{' '} */}
+          <source src={bgVideo} type='video/mp4' />
+        </video>
+        <div className='banner'>
+          <h1 className='home-title'>
+            Rikie <span>Patrick</span>
+          </h1>
+          <h2 className='headline flex flex-wrap'>
+            <span>I am a </span>
+            <div ref={animationRef} className='word' />
+          </h2>
         </div>
-      </section>
+      </div>
     </main>
   );
 }

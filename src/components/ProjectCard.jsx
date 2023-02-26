@@ -3,11 +3,11 @@ import '../css/projects.css';
 function ProjectCard({ img, name, description, siteLink, codeLink }) {
   return (
     <div className='card shadow'>
-      <img className='mb-3 w-full' src={img} alt={name} />
+      <img src={img} alt={name} />
       <div className='card__content'>
         <h3>{name}</h3>
         <p>{description}</p>
-        <div className='card__buttons content-end'>
+        <div className='card__buttons md:hello'>
           <a type='button' href={siteLink} className='btn-site rounded-lg'>
             Demo
           </a>

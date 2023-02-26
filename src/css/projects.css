@@ -1,15 +1,15 @@
 .projects-container {
   margin: 1rem auto 2rem auto;
-  width: 60%;
+  max-width: 80%;
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  grid-template-rows: repeat(6, minmax(0, 1fr));
-  justify-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-rows: repeat(2, minmax(0, 1fr));
+  justify-items: stretch;
   gap: 1rem;
 }
 
 .card {
-  min-width: 20rem;
+  /* max-width: 20rem; */
   overflow: hidden;
   border-radius: 1rem;
   background-color: var(--color-secondary);
@@ -39,6 +39,7 @@
   font-size: 1rem;
   line-height: 1.5rem;
   margin-bottom: 0.5rem;
+  height: 100px;
 }
 
 .card__buttons {
@@ -61,4 +62,16 @@
 .btn-code:focus {
   color: var(--color-dark) !important;
   background-color: #ffffff !important;
+  transition: all 0.5s ease-in-out;
+}
+
+@screen lg {
+  .projects-container {
+      margin: 1rem auto 2rem auto;
+      max-width: 600px;
+      display: grid;
+      grid-template-columns: repeat(2, minmax(250px, 1fr));
+      justify-items: stretch;
+      gap: 1rem;
+    }
 }

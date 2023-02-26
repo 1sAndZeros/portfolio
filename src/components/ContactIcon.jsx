@@ -2,7 +2,7 @@ import '../css/contact.css';
 
 function ContactIcon({ icon, tag, href }) {
   return (
-    <div className='text-center'>
+    <div className='contact-icon-container'>
       <a
         href={href}
         target='_blank'

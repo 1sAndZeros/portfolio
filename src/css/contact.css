@@ -9,26 +9,41 @@
     padding: 1rem;
   }
 
-    .form-input {
-      margin-top: 0.5rem;
-      display: block;
-      width: 100%;
-      border-radius: 0.125rem;
-      padding: 0.625rem;
-      font-size: 0.875rem;
-      line-height: 1.25rem;
-      background-color: transparent;
-    }
-  
-    .form-input::placeholder {
-      color: var(--color-neutral)
-    }
-  
-    .form-input:focus {
-      border-color: var(--color-primary);
-    }
+  .form-input {
+    margin-top: 0.5rem;
+    display: block;
+    width: 100%;
+    border-radius: 0.125rem;
+    padding: 0.625rem;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    background-color: transparent;
+  }
+
+  .form-input::placeholder {
+    color: var(--color-neutral)
+  }
+
+  .form-input:focus {
+    border-color: var(--color-primary);
+  }
+
+  .contact-icon-container {
+    text-align: center;
+  }
+
+  .contact-icon-container h5 {
+    font-size: 0.75rem;
+  }
+
 
   .contact-icon {
     font-size: 3rem;
     color: var(--color-primary);
+  }
+
+  @screen sm {
+    .contact-icon-container h5 {
+      font-size: 1rem;
+    }
   }

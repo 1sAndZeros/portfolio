@@ -7,7 +7,7 @@ import ContactIcon from '../components/ContactIcon';
 
 function ContactMe() {
   return (
-    <main className='main'>
+    <main id='contact' className='main'>
       <HeadingPrimary text='Contact Me' icon={mailIcon} />
       <div className='form-container'>
         <Subheading text="Let's Talk!" />
