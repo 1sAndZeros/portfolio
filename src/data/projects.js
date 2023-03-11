@@ -2,6 +2,7 @@ import machineImg from '../assets/project-images/tools.jpg';
 import foodImg from '../assets/project-images/food.jpg';
 import footballImg from '../assets/project-images/football.jpg';
 import playerImg from '../assets/project-images/player.jpg';
+import padlockImg from '../assets/project-images/padlock.jpg';
 
 const projects = [
   {
@@ -37,6 +38,14 @@ const projects = [
     description: 'Generate a shopping list from chosen recipes',
     siteLink: 'https://github.com/1sAndZeros',
     codeLink: 'https://github.com/1sAndZeros',
+  },
+  {
+    id: 5,
+    img: padlockImg,
+    name: 'Password Generator',
+    description: 'Generate a secure password',
+    siteLink: 'https://rp-pwd-gen.netlify.app/',
+    codeLink: 'https://github.com/1sAndZeros/password-generator',
   },
 ];
 

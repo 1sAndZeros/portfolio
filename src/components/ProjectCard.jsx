@@ -8,10 +8,22 @@ function ProjectCard({ img, name, description, siteLink, codeLink }) {
         <h3>{name}</h3>
         <p>{description}</p>
         <div className='card__buttons md:hello'>
-          <a type='button' href={siteLink} className='btn-site rounded-lg'>
+          <a
+            type='button'
+            href={siteLink}
+            target='_blank'
+            rel='noreferrer'
+            className='btn-site rounded-lg'
+          >
             Demo
           </a>
-          <a type='button' href={codeLink} className='btn-code'>
+          <a
+            type='button'
+            href={codeLink}
+            target='_blank'
+            rel='noreferrer'
+            className='btn-code'
+          >
             <i className='fa-brands fa-github fa-xl' />
           </a>
         </div>
