@@ -3,7 +3,8 @@ import '../css/contact.css';
 function ContactForm() {
   // TODO: Add click handler for submit button to send message
   return (
-    <form className='container mx-auto p-6'>
+    // eslint-disable-next-line react/no-unknown-property
+    <form netlify className='container mx-auto p-6'>
       <div className='mb-2 grid gap-6 md:grid-cols-2'>
         <div>
           <label htmlFor='name'>
@@ -11,6 +12,7 @@ function ContactForm() {
             <input
               type='text'
               id='name'
+              name='name'
               className='form-input'
               placeholder='John Smith'
               required
@@ -23,6 +25,7 @@ function ContactForm() {
             <input
               type='email'
               id='email'
+              name='email'
               className='form-input'
               placeholder='johnsmith@example.com'
               required
@@ -36,6 +39,7 @@ function ContactForm() {
           <textarea
             type='text'
             id='message'
+            name='message'
             className='form-input'
             placeholder='How can I help?'
             rows='4'
