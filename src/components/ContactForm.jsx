@@ -4,7 +4,8 @@ function ContactForm() {
   // TODO: Add click handler for submit button to send message
   return (
     // eslint-disable-next-line react/no-unknown-property
-    <form netlify method='POST' className='container mx-auto p-6'>
+    <form name='contact' method='post' className='container mx-auto p-6'>
+      <input type='hidden' name='form-name' value='contact' />
       <div className='mb-2 grid gap-6 md:grid-cols-2'>
         <div>
           <label htmlFor='name'>
