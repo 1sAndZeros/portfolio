@@ -50,7 +50,7 @@ function Home() {
   return (
     <main id='home' className='main'>
       <div id='video-container'>
-        <video autoPlay loop muted id='bg-video' poster={mountainImg}>
+        <video autoPlay loop muted id='bg-video'>
           {/* Video by Ingrid North: */}
           {/* https://www.pexels.com/video/the-sun-illuminating-earth-s-surface-1851190/{' '} */}
           <source src={bgVideo} type='video/mp4' />
@@ -61,7 +61,7 @@ function Home() {
           </h1>
           <h2 className='headline flex flex-wrap'>
             <span>I am a </span>
-            <div ref={animationRef} className='word' />
+            <span ref={animationRef} className='word' />
           </h2>
         </div>
       </div>

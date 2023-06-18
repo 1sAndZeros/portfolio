@@ -9,11 +9,11 @@ function AboutMe() {
       <HeadingPrimary text='About' icon={userIcon} />
       <Subheading text='Get to know me!' />
       <div className='about-container'>
-        <img src='Rikie.png' className='about-img' alt='me' />
+        <img src='MeetRikie.png' className='about-img' alt='me' />
         <div className='p-4'>
           <h2>Hello</h2>
           <p>
-            My name is Rikie and I am a web developer with a passion passion for
+            My name is Rikie and I am a web developer with a passion for
             creating intuitive and engaging websites. Although my background is
             in manufacturing engineering, I have always been interested in
             technology and coding, and I&#39;ve been teaching myself web

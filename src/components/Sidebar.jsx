@@ -47,13 +47,29 @@ function Sidebar() {
           </a>
           <ul>
             {pages.map((page) => {
-              return (
+              return page.id != 4 ? (
                 <SidebarItem
                   key={page.id}
                   title={page.title}
                   link={page.link}
                   img={page.img}
                 />
+              ) : (
+                <li>
+                  <a
+                    href='\Rikie Patrick CV.pdf'
+                    target='_blank'
+                    rel='noreferrer'
+                    className='sidebar-item'
+                  >
+                    <img
+                      src={pages[4].img}
+                      alt='icon'
+                      className='sidebar-icon'
+                    />
+                    <span className='ml-3'>{pages[4].title}</span>
+                  </a>
+                </li>
               );
             })}
           </ul>

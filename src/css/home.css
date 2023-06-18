@@ -82,6 +82,7 @@
 
 .word {
   border-bottom: #00A3E1 solid 3px;
+  white-space: normal;
 }
 
 .word:after {
