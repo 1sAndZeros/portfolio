@@ -5,6 +5,7 @@ import playerImg from '../assets/project-images/player.jpg';
 import padlockImg from '../assets/project-images/padlock.jpg';
 import socialMediaImg from '../assets/project-images/socialmedia.jpg';
 import houseImg from '../assets/project-images/house.jpg';
+import joyImg from '../assets/project-images/joy.jpg';
 
 const projects = [
   {
@@ -93,7 +94,7 @@ const projects = [
   },
   {
     id: 7,
-    img: houseImg,
+    img: joyImg,
     name: 'Joy Challenge',
     description:
       'A web app used to display everyones chosen joy as part of the Makers Joy Challenge, including their quote and song for the day.',
