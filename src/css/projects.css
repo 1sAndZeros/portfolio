@@ -8,6 +8,22 @@
   gap: 1rem;
 }
 
+.project {
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 0.5rem;
+}
+
+.project p {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  flex-grow: 1;
+  padding-inline: 1rem;
+}
+
 .card {
   overflow: hidden;
   border-radius: 1rem;
@@ -18,37 +34,21 @@
   margin-bottom: 0.75rem;
 }
 
-.card__content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-bottom: 1.5rem;
-  padding-inline: 0.5rem;
-  text-align: center;
-}
-
-.card__content h3 {
+.project h3 {
   font-size: 1.5rem;
   line-height: 1.5rem;
-  margin-bottom: 0.5rem;
-}
-
-.card__content p {
-  font-size: 1rem;
-  line-height: 1.5rem;
-  margin-bottom: 0.5rem;
-  height: 100px;
 }
 
 .card__buttons {
   display: flex;
   gap: 1rem;
+  width: 100%;
+  padding: 1rem;
 }
 
 .card__buttons>[class^="btn-"] {
   border-radius: 0.625rem;
-  width: 5rem;
-  
+  flex-grow: 1;
 }
 
 .btn-code {
@@ -65,12 +65,12 @@
 
 @screen lg {
   .projects-container {
-      margin: 1rem auto 2rem auto;
-      max-width: 800px;
-      display: grid;
-      grid-template-columns: repeat(3, minmax(30%, 1fr));
-      justify-items: stretch;
-      gap: 1rem;
-      padding: 1rem;
-    }
+    margin: 1rem auto 2rem auto;
+    max-width: 1000px;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(30%, 1fr));
+    justify-items: stretch;
+    gap: 1rem;
+    padding: 1rem;
+  }
 }

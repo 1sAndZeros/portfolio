@@ -3,18 +3,22 @@
 @tailwind utilities;
 
 :root {
-  --color-primary: #00A3E1;
+  --color-primary: #00a3e1;
   --color-dark: #2c2d2f;
   --color-neutral: #777777;
   --color-secondary: #17181b;
 
   --ff-primary: 'Exo 2', sans-serif;
+}
 
+*::selection {
+  background-color: var(--color-primary);
+  color: var(--color-secondary);
 }
 
 body {
   color: #ffffff;
-  background-color: var(--color-dark);
+  background-image: linear-gradient(to top, var(--color-dark) 0%, var(--color-secondary) 100%);
   font-family: var(--ff-primary);
   min-height: 100vh;
 }
@@ -31,15 +35,15 @@ label {
   overflow: visible;
   width: 100%;
   padding: 5px 10px;
-  transition: all .5s ease;
+  transition: all 0.5s ease;
   position: relative;
   z-index: 1;
   background-color: transparent;
   color: #ffffff !important;
 }
 
-[type=button],
-[type=submit] {
+[type='button'],
+[type='submit'] {
   color: var(--color-primary);
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1rem;
@@ -53,10 +57,10 @@ label {
   border-color: var(--color-primary);
 }
 
-[type=button]:hover,
-[type=button]:focus,
-[type=submit]:hover,
-[type=submit]:focus {
+[type='button']:hover,
+[type='button']:focus,
+[type='submit']:hover,
+[type='submit']:focus {
   color: var(--color-dark);
   background-color: var(--color-primary);
   transition: all 0.5s ease-in-out;
@@ -74,5 +78,11 @@ main {
     margin-top: 0;
     padding-top: 0;
     min-height: 100vh;
+  }
+}
+
+@screen lg {
+  :root {
+    color: yellow !important;
   }
 }

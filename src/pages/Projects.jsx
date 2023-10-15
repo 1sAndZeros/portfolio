@@ -12,16 +12,7 @@ function Projects() {
       <Subheading text='Check it out!' />
       <div className='projects-container'>
         {projects.map((project) => {
-          return (
-            <ProjectCard
-              key={project.id}
-              name={project.name}
-              description={project.description}
-              img={project.img}
-              siteLink={project.siteLink}
-              codeLink={project.codeLink}
-            />
-          );
+          return <ProjectCard key={project.id} project={project} />;
         })}
       </div>
     </main>

@@ -57,7 +57,7 @@ function Sidebar() {
               ) : (
                 <li>
                   <a
-                    href='\Rikie Patrick CV.pdf'
+                    href='\CV.pdf'
                     target='_blank'
                     rel='noreferrer'
                     className='sidebar-item'
