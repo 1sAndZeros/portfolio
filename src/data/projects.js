@@ -6,6 +6,7 @@ import padlockImg from '../assets/project-images/padlock.jpg';
 import socialMediaImg from '../assets/project-images/socialmedia.jpg';
 import houseImg from '../assets/project-images/house.jpg';
 import joyImg from '../assets/project-images/joy.jpg';
+import travelImg from '../assets/project-images/travel.jpg';
 
 const projects = [
   {
@@ -101,6 +102,17 @@ const projects = [
     techStack: ['Javascript', 'HTML', 'CSS', 'React'],
     siteLink: 'https://makersjoychallenge.netlify.app/',
     codeLink: 'https://github.com/1sAndZeros/makers-joy-challenge',
+    deployed: true,
+    complete: true,
+  },
+  {
+    id: 8,
+    img: travelImg,
+    name: 'MyPlace',
+    description:
+      'Web App to track visited and desired locations and share your travel map with friends',
+    siteLink: 'https://myplace-acrry.onrender.com/',
+    codeLink: 'https://github.com/1sAndZeros/MyPlace',
     deployed: true,
     complete: true,
   },
