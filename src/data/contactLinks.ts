@@ -37,3 +37,11 @@ const socialLink = [
 ];
 
 export default socialLink;
+
+export interface SocialLink {
+    id: number;
+    name: string;
+    icon: string;
+    tag: string;
+    href: string;
+}

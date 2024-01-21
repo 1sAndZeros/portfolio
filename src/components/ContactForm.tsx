@@ -38,12 +38,11 @@ function ContactForm() {
         <label htmlFor='message'>
           Message
           <textarea
-            type='text'
             id='message'
             name='message'
             className='form-input'
             placeholder='How can I help?'
-            rows='4'
+            rows={4}
             required
           />
         </label>

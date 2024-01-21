@@ -12,11 +12,11 @@ function App() {
       <Router>
         <Sidebar />
         <Routes>
-          <Route exact path='/' element={<Home />} />
-          <Route exact path='/about' element={<AboutMe />} />
-          <Route exact path='/projects' element={<Projects />} />
-          <Route exact path='/contact' element={<ContactMe />} />
-          <Route exact path='*' element={<NotFound />} />
+          <Route path='/' element={<Home />} />
+          <Route path='/about' element={<AboutMe />} />
+          <Route path='/projects' element={<Projects />} />
+          <Route path='/contact' element={<ContactMe />} />
+          <Route path='*' element={<NotFound />} />
         </Routes>
       </Router>
     </div>

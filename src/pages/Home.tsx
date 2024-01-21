@@ -1,10 +1,10 @@
 import { useEffect, useRef } from 'react';
 import bgVideo from '../assets/bg-video-earth.mp4';
-import mountainImg from '../assets/mountain-img.jpg';
 import '../css/home.css';
 
 function Home() {
-  const animationRef = useRef();
+  console.log(bgVideo);
+  const animationRef = useRef<HTMLSpanElement>(null);
 
   useEffect(() => {
     const words = ['Web Developer', 'Software Engineer', 'UI / UX Designer'];
@@ -41,7 +41,7 @@ function Home() {
           offset -= 1;
         }
       }
-      animationRef.current.innerHTML = part;
+      if (animationRef.current) animationRef.current.innerHTML = part;
     }, speed);
     return () => {
       clearInterval(wordAnimation);

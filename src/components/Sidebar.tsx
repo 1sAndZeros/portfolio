@@ -4,7 +4,7 @@ import pages from '../data/pages';
 import '../css/sidebar.css';
 
 function Sidebar() {
-  const hamburgerRef = useRef();
+  const hamburgerRef = useRef<HTMLDivElement>(null);
   return (
     <div>
       <div ref={hamburgerRef} className='hamburger-bar'>
@@ -35,7 +35,7 @@ function Sidebar() {
       </div>
       <aside
         id='sidebar'
-        className='-translate-x-full transition-transform md:translate-x-0'
+        className='-left-full transition-transform md:translate-x-full'
         aria-label='sidebar'
       >
         <div className='sidebar__content'>
@@ -47,29 +47,13 @@ function Sidebar() {
           </a>
           <ul>
             {pages.map((page) => {
-              return page.id != 4 ? (
+              return (
                 <SidebarItem
                   key={page.id}
                   title={page.title}
                   link={page.link}
                   img={page.img}
                 />
-              ) : (
-                <li>
-                  <a
-                    href='\CV.pdf'
-                    target='_blank'
-                    rel='noreferrer'
-                    className='sidebar-item'
-                  >
-                    <img
-                      src={pages[4].img}
-                      alt='icon'
-                      className='sidebar-icon'
-                    />
-                    <span className='ml-3'>{pages[4].title}</span>
-                  </a>
-                </li>
               );
             })}
           </ul>

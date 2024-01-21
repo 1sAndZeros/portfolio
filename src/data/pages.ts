@@ -4,7 +4,7 @@ import doc from '../assets/svg-icons/doc.svg';
 import home from '../assets/svg-icons/home.svg';
 import projects from '../assets/svg-icons/projects.svg';
 
-const pages = [
+const pages: Page[] = [
   {
     id: 0,
     title: 'Home',
@@ -38,3 +38,10 @@ const pages = [
 ];
 
 export default pages;
+
+export interface Page {
+  id: number;
+  title: string;
+  link: string;
+  img: string;
+}
