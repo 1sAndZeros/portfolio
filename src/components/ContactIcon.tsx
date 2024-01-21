@@ -1,6 +1,13 @@
+import React from 'react';
 import '../css/contact.css';
 
-function ContactIcon({ icon, tag, href }) {
+interface Props {
+  icon: string;
+  tag: string;
+  href: string;
+}
+
+const ContactIcon: React.FC<Props> = ({ icon, tag, href }) => {
   return (
     <div className='contact-icon-container'>
       <a
@@ -14,6 +21,6 @@ function ContactIcon({ icon, tag, href }) {
       <h5>{tag}</h5>
     </div>
   );
-}
+};
 
 export default ContactIcon;

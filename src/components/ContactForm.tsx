@@ -1,7 +1,6 @@
 import '../css/contact.css';
 
-function ContactForm() {
-  // TODO: Add click handler for submit button to send message
+const ContactForm = () => {
   return (
     // eslint-disable-next-line react/no-unknown-property
     <form name='contact' method='post' className='container mx-auto p-6'>
@@ -54,6 +53,6 @@ function ContactForm() {
       </div>
     </form>
   );
-}
+};
 
 export default ContactForm;

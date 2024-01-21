@@ -35,7 +35,7 @@ function Sidebar() {
       </div>
       <aside
         id='sidebar'
-        className='-left-full transition-transform md:translate-x-full'
+        className='-translate-x-full transition-transform md:translate-x-0'
         aria-label='sidebar'
       >
         <div className='sidebar__content'>
